@@ -17,8 +17,10 @@
     <!-- Article -->
     <div class="container">
       <article class="article">
-        <h2 class="article__heading">freeCodeCamp's Survey Form Project</h2>
-        <p class="article__description">
+        <h1 class="article__heading" id="title">
+          freeCodeCamp's Survey Form Project
+        </h1>
+        <p class="article__description" id="description">
           <a
             href="https://www.linkedin.com/in/daniel-nelson-9151a6212/"
             target="_blank"
@@ -33,5 +35,51 @@
         </p>
       </article>
     </div>
+    <!-- Form -->
+    <section class="form">
+      <form action="#" id="survey-form">
+        <fieldset class="form__fieldset">
+          <label for="first-name"
+            >First Name:
+            <input
+              type="text"
+              id="first-name"
+              name="firstName"
+              placeholder="Enter Your First Name"
+              required
+          /></label>
+          <label for="last-name"
+            >Last Name:
+            <input
+              type="text"
+              id="last-name"
+              name="lasttName"
+              placeholder="Enter Your Last Name"
+              required
+          /></label>
+          <label for="email"
+            >Email:
+            <input
+              type="email"
+              id="email"
+              name="userEmail"
+              placeholder="Enter Your Email"
+              required
+          /></label>
+          <label for="age"
+            >Age <span class="form__optional">(optional)</span>
+            <input
+              type="number"
+              id="age"
+              name="userAge"
+              placeholder="Enter Your Age"
+              min="13"
+              max="120"
+          /></label>
+        </fieldset>
+        <fieldset class="form__fieldset"></fieldset>
+        <fieldset class="form__fieldset"></fieldset>
+      </form>
+    </section>
   </body>
 </html>

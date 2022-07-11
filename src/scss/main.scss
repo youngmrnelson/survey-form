@@ -28,7 +28,7 @@ html, body {
     font-family: 'Lato', sans-serif;
 }
 
-h2 {
+h1 {
     font-family: 'Roboto Mono', monospace;
     color: var(--gray-90);
 }
@@ -79,5 +79,32 @@ a:visited, a:active, a:hover {
     &__description {
         margin-top: 0.5rem;
         font-size: 0.9rem;
+    }
+}
+
+// Form
+.form {
+    background-color: var(--gray-00);
+    width: min(95%, 800px);
+    margin: 0 auto;
+    padding: 0.6rem;
+    
+    @media (min-width: 750px) {
+        text-align: center;
+    }
+
+    &__fieldset {
+        border: none;
+        
+        label {
+            display: inline-block;
+            width: min(70%, 500px);
+            margin-block: 0.5rem;
+            padding: 0.2rem;
+        }
+
+        input {
+            padding: 0.15rem;
+        }
     }
 }
