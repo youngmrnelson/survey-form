@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Survey Form</title>
     <link rel="stylesheet" href="css/main.css" />
+    <script
+      src="https://kit.fontawesome.com/4066de0dc0.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <!-- Header -->
@@ -40,11 +44,11 @@
       <form action="#" id="survey-form">
         <!-- 1st Fieldset -->
         <fieldset class="form__fieldset">
-          <label for="first-name"
+          <label for="name" id="name-label"
             >First Name:
             <input
               type="text"
-              id="first-name"
+              id="name"
               name="firstName"
               placeholder="Enter Your First Name"
               required
@@ -58,7 +62,7 @@
               placeholder="Enter Your Last Name"
               required
           /></label>
-          <label for="email"
+          <label for="email" id="email-label"
             >Email:
             <input
               type="email"
@@ -67,11 +71,11 @@
               placeholder="Enter Your Email"
               required
           /></label>
-          <label for="age"
+          <label for="number" id="number-label"
             >Age <span class="form__optional">(optional)</span>
             <input
               type="number"
-              id="age"
+              id="number"
               name="userAge"
               placeholder="Enter Your Age"
               min="13"
@@ -117,7 +121,7 @@
           <p class="form__text">
             What is your favorite feature of freeCodeCamp?
           </p>
-          <select name="favoriteFeature" id="feature">
+          <select name="favoriteFeature" id="dropdown">
             <option value="0">Select an option</option>
             <option value="1">Challenges</option>
             <option value="2">Projects</option>
@@ -231,8 +235,21 @@
           ></textarea>
         </fieldset>
         <!-- Submit -->
-        <input type="submit" value="Submit" class="btn" />
+        <input id="submit" type="submit" value="Submit" class="btn" />
       </form>
     </section>
+    <!-- Footer -->
+    <footer class="footer">
+      <p class="footer__text">
+        Created by
+        <a href="https://www.linkedin.com/in/daniel-nelson-9151a6212/"
+          >Daniel Nelson <i class="fa-brands fa-linkedin"></i
+        ></a>
+        | Full Code on
+        <a href="https://github.com/youngmrnelson/survey-form"
+          >GitHub <i class="fa-brands fa-github"></i
+        ></a>
+      </p>
+    </footer>
   </body>
 </html>
