@@ -25,6 +25,23 @@ html, body {
 
 h2 {
   font-family: "Roboto Mono", monospace;
+  color: var(--gray-90);
+}
+
+a {
+  text-decoration: none;
+  color: var(--gray-80);
+}
+
+a:visited, a:active, a:hover {
+  color: var(--gray-75);
+}
+
+.container {
+  width: min(90%, 800px);
+  margin: 1rem auto;
+  padding: 0.5rem;
+  border: 1px solid red;
 }
 
 .header {
@@ -36,10 +53,21 @@ h2 {
   font-family: "Ubuntu Mono", monospace;
   font-size: 1.5rem;
 }
-.header__link {
+.header__link, .header__link:hover, .header__link:active, .header__link:visited {
   text-decoration: none;
   color: var(--gray-05);
   padding: 0.5rem 1rem;
+}
+
+.article {
+  text-align: center;
+}
+.article__heading {
+  font-size: 1rem;
+}
+.article__description {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
 }
 
 /*# sourceMappingURL=main.css.map */

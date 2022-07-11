@@ -30,6 +30,24 @@ html, body {
 
 h2 {
     font-family: 'Roboto Mono', monospace;
+    color: var(--gray-90);
+}
+
+a {
+    text-decoration: none;
+    color: var(--gray-80);
+}
+
+a:visited, a:active, a:hover {
+    color: var(--gray-75);
+}
+
+// Container
+.container {
+    width: min(90%, 800px);
+    margin: 1rem auto;
+    padding: 0.5rem;
+    border: 1px solid red;
 }
 
 // Header
@@ -43,9 +61,23 @@ h2 {
         font-size: 1.5rem;
     }
 
-    &__link {
+    &__link, &__link:hover, &__link:active, &__link:visited {
         text-decoration: none;
         color: var(--gray-05);
         padding: 0.5rem 1rem;
+    }
+}
+
+// Article
+.article {
+    text-align: center;
+
+    &__heading {
+        font-size: 1rem;
+    }
+
+    &__description {
+        margin-top: 0.5rem;
+        font-size: 0.9rem;
     }
 }
