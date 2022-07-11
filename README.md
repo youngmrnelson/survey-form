@@ -2,6 +2,10 @@
 
 [freeCodeCamp's Build a Survey Form Project](https://www.freecodecamp.org/learn/2022/responsive-web-design/build-a-survey-form-project/build-a-survey-form)
 
+### Live Preview
+
+[Live Preview](https://youngmrnelson.github.io/survey-form/)
+
 ## Build a Survey Form
 
 ### Objective
