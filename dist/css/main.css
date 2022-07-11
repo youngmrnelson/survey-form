@@ -48,6 +48,23 @@ a:visited, a:active, a:hover {
   padding: 0.5rem;
 }
 
+.btn {
+  font-family: "Roboto Mono", monospace;
+  font-weight: bold;
+  display: inline-block;
+  width: 100%;
+  letter-spacing: 0.1rem;
+  border: 3px solid var(--gray-90);
+  padding: 0.5rem 1.3rem;
+  margin: 1rem auto;
+  cursor: pointer;
+  background-color: var(--gray-15);
+}
+
+.btn:hover {
+  filter: brightness(90%);
+}
+
 .header {
   background-color: var(--gray-90);
   padding: 0.5rem 1rem;
@@ -103,8 +120,9 @@ a:visited, a:active, a:hover {
 .form__fieldset input, .form__fieldset select {
   display: block;
   border: 1px solid black;
+  background-color: var(--gray-05);
   border-radius: 5px;
-  height: 2rem;
+  height: 3rem;
   width: min(80%, 400px);
   padding: 0.75rem;
   margin: 0.5rem auto 1rem;
@@ -116,6 +134,14 @@ a:visited, a:active, a:hover {
 }
 .form__fieldset div > label {
   padding-inline: 1rem 3rem;
+}
+.form__fieldset textarea {
+  padding: 0.5rem;
+  width: 100%;
+  resize: none;
+}
+.form__fieldset textarea::placeholder, .form__fieldset input::placeholder {
+  font-size: 1rem;
 }
 
 /*# sourceMappingURL=main.css.map */
