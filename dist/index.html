@@ -38,6 +38,7 @@
     <!-- Form -->
     <section class="form">
       <form action="#" id="survey-form">
+        <!-- 1st Fieldset -->
         <fieldset class="form__fieldset">
           <label for="first-name"
             >First Name:
@@ -77,7 +78,42 @@
               max="120"
           /></label>
         </fieldset>
-        <fieldset class="form__fieldset"></fieldset>
+        <!-- 2nd Fieldset -->
+        <fieldset class="form__fieldset">
+          <p class="form__text">
+            Would you recommend freeCodeCamp to a friend?
+          </p>
+          <div>
+            <label for="definitely" class="radio">
+              <input
+                type="radio"
+                id="definitely"
+                name="userRecommendation"
+                value="Definitely"
+              />Definitely</label
+            >
+          </div>
+          <div>
+            <label for="maybe" class="radio">
+              <input
+                type="radio"
+                id="maybe"
+                name="userRecommendation"
+                value="Maybe"
+              />Maybe</label
+            >
+          </div>
+          <div>
+            <label for="not-sure" class="radio">
+              <input
+                type="radio"
+                id="not-sure"
+                name="userRecommendation"
+                value="Not Sure"
+              />Not Sure</label
+            >
+          </div>
+        </fieldset>
         <fieldset class="form__fieldset"></fieldset>
       </form>
     </section>
