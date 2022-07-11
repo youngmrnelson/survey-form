@@ -82,7 +82,11 @@ a:visited, a:active, a:hover {
 }
 .form__text {
   font-size: 1rem;
-  margin-bottom: 1rem;
+  margin-block: 1rem;
+}
+.form__optional {
+  font-size: 0.8rem;
+  font-style: italic;
 }
 .form__fieldset {
   border: none;
@@ -96,7 +100,7 @@ a:visited, a:active, a:hover {
   padding: 0.2rem;
   margin-block: 0.5rem 1rem;
 }
-.form__fieldset input {
+.form__fieldset input, .form__fieldset select {
   display: block;
   border: 1px solid black;
   border-radius: 5px;
@@ -105,7 +109,7 @@ a:visited, a:active, a:hover {
   padding: 0.75rem;
   margin: 0.5rem auto 1rem;
 }
-.form__fieldset input[type=radio] {
+.form__fieldset input[type=radio], .form__fieldset input[type=checkbox] {
   height: 1rem;
   width: 10%;
   display: inline-block;
