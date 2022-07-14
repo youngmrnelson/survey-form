@@ -42,18 +42,23 @@ a {
 .btn {
   font-family: "Roboto Mono", monospace;
   font-weight: bold;
+  font-size: 1.1rem;
   display: inline-block;
   width: 100%;
   letter-spacing: 0.1rem;
   border: 3px solid var(--gray-90);
-  padding: 0.5rem 1.3rem;
-  margin: 1rem auto;
+  padding: 0.5rem 1rem;
+  margin: 1.3rem auto 1rem;
   cursor: pointer;
   background-color: var(--gray-15);
 }
-
-.btn:hover {
+.btn:hover, .btn:active {
   filter: brightness(90%);
+}
+@media (min-width: 800px) {
+  .btn {
+    width: 30%;
+  }
 }
 
 .container {
@@ -83,7 +88,7 @@ a {
 }
 .header__title {
   font-family: "Permanent Marker", cursive;
-  font-size: min(1.5rem, 5vw);
+  font-size: min(1.75rem, 5.5vw);
 }
 .header__link, .header__link:hover, .header__link:active, .header__link:visited {
   text-decoration: none;
@@ -114,23 +119,23 @@ a {
 }
 
 .form {
-  width: min(95%, 700px);
+  width: min(95%, 800px);
   margin: 0 auto;
   padding: 0.6rem;
 }
 .form__text {
-  font-size: 1rem;
+  font-size: 1.3rem;
   margin-block: 1rem;
 }
 .form__optional {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   font-style: italic;
 }
 .form__fieldset {
   border: none;
   border-bottom: 3px solid var(--gray-15);
-  padding: 0.5rem;
-  margin-top: 0.5rem;
+  padding: 1rem 0.5rem 2rem;
+  margin-block: 0.5rem;
 }
 .form__fieldset label {
   width: min(70%, 500px);
@@ -147,27 +152,47 @@ a {
   width: min(80%, 400px);
   padding: 0.75rem;
   margin: 0.5rem auto 1rem;
+  font-size: 1.2rem;
+}
+@media (min-width: 800px) {
+  .form__fieldset input, .form__fieldset select {
+    margin: 0.5rem 1rem;
+    display: inline-block;
+  }
 }
 .form__fieldset input[type=radio], .form__fieldset input[type=checkbox] {
-  height: 1rem;
-  width: 10%;
+  height: 0.8rem;
+  width: 3%;
   display: inline-block;
+}
+.form__fieldset div {
+  margin-top: 0.7rem;
 }
 .form__fieldset div > label {
   padding-inline: 1rem 3rem;
 }
 .form__fieldset textarea {
-  padding: 0.5rem;
+  padding: 0.7rem;
   width: 100%;
   resize: none;
+  border: 1px solid var(--gray-90);
 }
 .form__fieldset textarea::placeholder, .form__fieldset input::placeholder {
   font-size: 1rem;
 }
 
 .footer {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
   padding-block: 1rem;
+}
+@media (min-width: 800px) {
+  .footer {
+    flex-direction: row;
+    justify-content: center;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
