@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
 // Global Styles
 * {
@@ -19,7 +20,7 @@
     --gray-90: #0a0a23;
     --gray-85: #1b1b32;
     --gray-80: #2a2a40;
-    --gray-75: #3b3b4f;
+    --gray-yy: #434396;
     // Light Colors
     --gray-00: #fff;
     --gray-05: #f5f6f7;
@@ -40,18 +41,7 @@ h1 {
 
 a {
     text-decoration: none;
-    color: var(--gray-80);
-}
-
-a:visited, a:active, a:hover {
-    color: var(--gray-75);
-}
-
-// Container
-.container {
-    width: min(90%, 800px);
-    margin: 1rem auto;
-    padding: 0.5rem;
+    color: var(--gray-yy);
 }
 
 // Button
@@ -72,24 +62,36 @@ a:visited, a:active, a:hover {
     filter: brightness(90%);
 }
 
+// Container
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin: 0 auto;
+    width: min(80%, 900px);
+
+    @media (min-width: 700px) {
+        flex-direction: row;
+    }
+}
+
 // Header
 .header {
     background-color: var(--gray-85);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 0.8rem 1rem;
     text-align: center;
 
     &__fcc {
-        width: min(10rem, 20vw);
+        width: 10rem;
         background-color: #0a0a23;
         padding: 0.5rem;
     }
 
     &__title {
-        font-family: 'Ubuntu Mono', monospace;
-        font-size: 1rem;
+        font-family: 'Permanent Marker', cursive;
+        font-size: min(1.5rem, 5vw);
     }
 
     &__link, &__link:hover, &__link:active, &__link:visited {
@@ -111,22 +113,24 @@ a:visited, a:active, a:hover {
 
 // Article
 .article {
-    text-align: center;
+    width: min(90%, 800px);
+    margin: 1rem auto;
+    padding: 0.75rem 0.5rem 2rem;
+    border-bottom: 6px solid var(--gray-15);
 
     &__heading {
-        font-size: 1rem;
+        font-size: 1.25rem;
     }
 
     &__description {
         margin-top: 0.5rem;
-        font-size: 0.9rem;
+        font-size: 1.05rem;
     }
 }
 
 // Form
 .form {
-    background-color: var(--gray-00);
-    width: min(95%, 500px);
+    width: min(95%, 700px);
     margin: 0 auto;
     padding: 0.6rem;
 
@@ -142,7 +146,7 @@ a:visited, a:active, a:hover {
     
     &__fieldset {
         border: none;
-        border-bottom: 1px dotted var(--gray-15);
+        border-bottom: 3px solid var(--gray-15);
         padding: 0.5rem;
         margin-top: 0.5rem;
 
