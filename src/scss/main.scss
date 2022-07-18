@@ -179,13 +179,18 @@ a {
         }
 
         input[type="radio"], input[type="checkbox"] {
-            height: 0.8rem;
+            height: 0.85rem;
             width: 3%;
             display: inline-block;
+            margin-right: 0.5rem;
         }
 
         div {
             margin-top: 0.7rem;
+
+            &:hover {
+                background-color: var(--gray-10);
+            }
         }
 
         div > label {

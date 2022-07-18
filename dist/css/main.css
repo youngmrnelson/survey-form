@@ -161,12 +161,16 @@ a {
   }
 }
 .form__fieldset input[type=radio], .form__fieldset input[type=checkbox] {
-  height: 0.8rem;
+  height: 0.85rem;
   width: 3%;
   display: inline-block;
+  margin-right: 0.5rem;
 }
 .form__fieldset div {
   margin-top: 0.7rem;
+}
+.form__fieldset div:hover {
+  background-color: var(--gray-10);
 }
 .form__fieldset div > label {
   padding-inline: 1rem 3rem;
