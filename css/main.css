@@ -96,7 +96,6 @@ nav .nav-link i {
 /* Header */
 header {
     margin-block: 64px;
-    text-align: center;
 }
 
 header .header-container {
@@ -110,6 +109,11 @@ header #title {
     margin-bottom: 24px;
 }
 
+header #title,
+header .title-icon {
+    text-align: center;
+}
+
 header .title-icon {
     display: block;
     font-size: 88px;
@@ -117,7 +121,24 @@ header .title-icon {
 }
 
 header .header-text {
-    text-align: left;
     font-size: 22px;
+}
+
+header .header-text,
+header aside .aside-text {
     line-height: 1.25;
 }
+
+header aside {
+    font-size: 20px;
+    margin-top: 32px;
+    padding: 18px 12px;
+    color: #4d6580;
+    border: 1px solid #b8d9ff;
+    background-color: #cce4ff;
+}
+
+header .aside-text a {
+    color: #2e3c4c;
+}
+
