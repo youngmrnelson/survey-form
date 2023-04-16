@@ -99,6 +99,7 @@ header {
 
 header .header-container {
     max-width: 750px;
+    padding-inline: 12px;
     margin: 0 auto;
 }
 
@@ -219,4 +220,27 @@ footer {
 
 footer .footer-text {
     font-size: 16px;
+}
+
+@media(max-width: 768px) {
+    /* Navigation */
+    .nav-container {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    /* Header */
+    header #title {
+        font-size: 32px;
+    }
+
+    header .header-text,
+    header aside .aside-text {
+        line-height: 1.5;
+    }
+
+    /* Main Section */
+    main form fieldset {
+        width: 100%;
+    }
 }
