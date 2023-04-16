@@ -1,5 +1,5 @@
 /* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
 
 /* Variables */
@@ -30,7 +30,12 @@ html, body {
 
 a {
     text-decoration: none;
-    color: var(--gray-00);
+    color: var(--gray-75);
+}
+
+a:hover {
+    background-color: var(--gray-10);
+    color: var(--gray-90);
 }
 
 li {
@@ -74,6 +79,7 @@ nav .nav-links li {
 }
 
 nav .nav-links a {
+    color: var(--gray-00);
     display: inline-block;
     padding: 8px;
 }
@@ -85,4 +91,33 @@ nav .nav-links a:hover {
 
 nav .nav-link i {
     margin-left: 8px;
+}
+
+/* Header */
+header {
+    margin-block: 64px;
+    text-align: center;
+}
+
+header .header-container {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+header #title {
+    font-size: 44px;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+
+header .title-icon {
+    display: block;
+    font-size: 88px;
+    margin-bottom: 24px;
+}
+
+header .header-text {
+    text-align: left;
+    font-size: 22px;
+    line-height: 1.25;
 }
