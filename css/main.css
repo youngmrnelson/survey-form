@@ -21,3 +21,68 @@
     box-sizing: border-box;
 }
 
+/* General Styling */
+html, body {
+    font-family: 'Lato', sans-serif;
+    background-color: var(--gray-05);
+    color: var(--gray-90);
+}
+
+a {
+    text-decoration: none;
+    color: var(--gray-00);
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Typography */
+h1, h2, h3 {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 500;
+}
+
+/* Navigation */
+nav {
+    background-color: var(--gray-90);
+    padding-block: 6px;
+}
+
+nav .nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .logo-img {
+    width: 225px;
+}
+
+nav .nav-links {
+    display: flex;
+    gap: 16px;
+}
+
+nav .nav-links li {
+    border: 1px solid var(--gray-00);
+}
+
+nav .nav-links a {
+    display: inline-block;
+    padding: 8px;
+}
+
+nav .nav-links a:hover {
+    background-color: var(--gray-00);
+    color: var(--gray-90);
+}
+
+nav .nav-link i {
+    margin-left: 8px;
+}
