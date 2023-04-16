@@ -1,0 +1,23 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+
+/* Variables */
+:root {
+    --gray-00: #fff;
+    --gray-05: #f5f6f7;
+    --gray-10: #dfdfe2;
+    --gray-15: #d0d0d5;
+    --gray-90: #0a0a23;
+    --gray-85: #1b1b32;
+    --gray-80: #2a2a40;
+    --gray-75: #3b3b4f;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
