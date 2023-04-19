@@ -12,11 +12,15 @@
     --gray-85: #1b1b32;
     --gray-80: #2a2a40;
     --gray-75: #3b3b4f;
+    --yellow: #f1be32;
 }
 
 /* General Styling */
+html {
+    font-size: 62%;
+}
+
 html, body {
-    font-size: 62.5%;
     font-family: 'Lato', sans-serif;
     background-color: var(--gray-05);
     color: var(--gray-90);
@@ -25,12 +29,15 @@ html, body {
 a {
     text-decoration: none;
     color: var(--gray-75);
+    font-size: 1.6rem;
 }
 
 li {
     list-style: none;
 }
 
+
+/* Utilities */
 .container {
     max-width: 1100px;
     margin: 0 auto;
@@ -38,7 +45,7 @@ li {
 
 /* Typography */
 p {
-    font-size: 22px;
+    font-size: 2rem;
 }
 
 h1, h2, h3 {
@@ -59,7 +66,8 @@ nav .nav-container {
 }
 
 nav .logo-img {
-    width: 225px;
+    width: 150px;
+    padding-top: 8px;
 }
 
 nav .nav-links {
@@ -67,14 +75,12 @@ nav .nav-links {
     gap: 16px;
 }
 
-nav .nav-links li {
-    border: 1px solid var(--gray-00);
-}
-
 nav .nav-links a {
-    color: var(--gray-00);
+    color: var(--yellow);
     display: inline-block;
     padding: 8px;
+    border-radius: 10px;
+
 }
 
 nav .nav-links a:hover {
