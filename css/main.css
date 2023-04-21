@@ -13,6 +13,11 @@
     --gray-80: #2a2a40;
     --gray-75: #3b3b4f;
     --yellow: #f1be32;
+    --aside-bg: #d9edf7;
+    --aside-border: #d4eef3;
+    --aside-text: #5b90a9;
+    --placeholder-bg: #99c9ff;
+    --placeholder-text: #5a89dd;
 }
 
 /* General Styling */
@@ -29,7 +34,6 @@ html, body {
 a {
     text-decoration: none;
     color: var(--gray-75);
-    font-size: 1.6rem;
 }
 
 li {
@@ -55,6 +59,7 @@ h1, h2, h3 {
 
 /* Navigation */
 nav {
+    position: relative;
     background-color: var(--gray-90);
     padding-block: 6px;
 }
@@ -73,6 +78,7 @@ nav .logo-img {
 nav .nav-links {
     display: flex;
     gap: 16px;
+    font-size: 1.6rem;
 }
 
 nav .nav-links a {
@@ -93,60 +99,64 @@ nav .nav-link i {
 }
 
 /* Header */
-header {
+.header {
     margin-block: 64px;
 }
 
-header .header-container {
-    max-width: 750px;
+.header .header-container {
+    max-width: 775px;
     padding-inline: 12px;
     margin: 0 auto;
 }
 
-header #title {
-    font-size: 44px;
+.header #title {
+    font-size: 4.4rem;
     font-weight: 600;
-    margin-bottom: 24px;
+    margin-bottom: 36px;
 }
 
-header #title,
-header .title-icon {
+.header #title,
+.header .title-icon {
     text-align: center;
 }
 
-header .title-icon {
+.header .title-icon {
     display: block;
-    font-size: 88px;
+    font-size: 9.6rem;;
     margin-bottom: 24px;
 }
 
-header .header-text a:hover,
+.header .header-text a:hover,
 .footer-link:hover {
     background-color: var(--gray-10);
     color: var(--gray-90);
 }
 
-header .header-text,
-header aside .aside-text {
-    line-height: 1.25;
+.header .header-text,
+.header aside .aside-text {
+    line-height: 1.5;
 }
 
-header aside {
-    font-size: 20px;
-    margin-top: 32px;
-    padding: 18px 12px;
-    color: #4d6580;
-    border: 1px solid #b8d9ff;
-    background-color: #cce4ff;
+.header .header-aside {
+    margin-block: 32px;
+    padding: 18px;
+    color: var(--aside-text);
+    border: 1px solid var(--aside-border);
+    background-color: var(--aside-bg);
 }
 
-header .aside-text a {
-    color: #2e3c4c;
-    border-bottom: 2px solid #b8d9ff;
+.header .aside-text {
+    font-size: 1.8rem;
 }
 
-header .aside-text a:hover {
-    background-color: #b8d9ff;
+.header .aside-text a {
+    color: var(--aside-text);
+    border-bottom: 1px solid var(--aside-text);
+}
+
+.header .aside-text a:hover {
+    color: var(--aside-bg);
+    background-color: var(--aside-text);
 }
 
 /* Main Section */
