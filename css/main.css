@@ -40,6 +40,10 @@ li {
     list-style: none;
 }
 
+img {
+    max-width: 100%;
+}
+
 
 /* Utilities */
 .container {
@@ -55,6 +59,31 @@ p {
 h1, h2, h3 {
     font-family: 'Roboto Mono', monospace;
     font-weight: 500;
+}
+
+.aside-text-alt {
+    text-align: right;
+}
+
+.main .form input[type="submit"],
+.btn {
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+    font-size: 2rem;
+    border: 4px solid var(--gray-90);
+    background-color: var(--gray-15);
+    color: var(--gray-90);
+    padding: 16px;
+}
+
+.main .form input[type="submit"]:hover,
+.btn:hover {
+    background-color: var(--gray-10);
+}
+
+.btn-projects {
+    margin: 12px;
 }
 
 /* Navigation */
@@ -223,23 +252,42 @@ nav .nav-link i {
     resize: none;
 }
 
-.main .form input[type="submit"] {
-    border: none;
-    cursor: pointer;
-    border: 4px solid var(--gray-90);
-    background-color: var(--gray-15);
-    color: var(--gray-90);
-    padding: 16px;
+/* Projects */
+.projects-accordion-menu {
+    background-color: #fff;
 }
 
-.main .form input[type="submit"]:hover {
-    background-color: var(--gray-10);
+.projects-detail {
+    padding-block: 12px;
+}
+
+.projects-title {
+    font-weight: 600;
+    font-size: 2.4rem;
+    padding: 32px 24px;
+    border-bottom: 1px solid var(--gray-10);
+}
+
+.projects-title:hover {
+    cursor: pointer;
+    background-color: #ccc;
+}
+
+.projects-image {
+    width: 90%;
+    padding: 12px;
+}
+
+.projects-info {
+    padding: 12px;
+    line-height: 1.5;
 }
 
 /* Footer */
 footer {
     text-align: center;
     padding-block: 16px;
+    background-color: var(--gray-15);
 }
 
 footer .footer-text {
