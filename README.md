@@ -2,6 +2,10 @@
 
 This is a web application that aims to replicate the functionality of [https://survey-form.freecodecamp.rocks](https://survey-form.freecodecamp.rocks). It allows users to input various information in a form and submit it for processing.
 
+## Live Preview
+
+[https://youngmrnelson.github.io/survey-form-FCC/](https://youngmrnelson.github.io/survey-form-FCC/)
+
 ## User Stories
 
 1. **Page Title**: As a user, I can see a page title in an `h1` element with an id of `title`.
