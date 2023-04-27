@@ -87,7 +87,7 @@ h1, h2, h3 {
 }
 
 /* Navigation */
-nav {
+.nav {
     position: sticky;
     top: 0;
     background-color: var(--gray-90);
