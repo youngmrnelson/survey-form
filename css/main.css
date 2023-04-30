@@ -55,7 +55,6 @@ table {
   border-spacing: 0;
 }
 
-/* Variables */
 :root {
   --gray-00: #fff;
   --gray-05: #f5f6f7;
@@ -71,6 +70,21 @@ table {
   --aside-text: #5b90a9;
   --placeholder-bg: #99c9ff;
   --placeholder-text: #5a89dd;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+.flex-ai--c {
+  align-items: center;
+}
+.flex-jc--sb {
+  justify-content: space-between;
 }
 
 /* General Styling */
@@ -95,12 +109,6 @@ li {
 
 img {
   max-width: 100%;
-}
-
-/* Utilities */
-.container {
-  max-width: 1000px;
-  margin: 0 auto;
 }
 
 /* Typography */
@@ -144,12 +152,6 @@ h1, h2, h3 {
   top: 0;
   background-color: var(--gray-90);
   padding-block: 6px;
-}
-
-nav .nav-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 
 nav .logo-img {
