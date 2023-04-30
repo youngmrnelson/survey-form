@@ -1,0 +1,365 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap");
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Variables */
+:root {
+  --gray-00: #fff;
+  --gray-05: #f5f6f7;
+  --gray-10: #dfdfe2;
+  --gray-15: #d0d0d5;
+  --gray-90: #0a0a23;
+  --gray-85: #1b1b32;
+  --gray-80: #2a2a40;
+  --gray-75: #3b3b4f;
+  --yellow: #f1be32;
+  --aside-bg: #d9edf7;
+  --aside-border: #d4eef3;
+  --aside-text: #5b90a9;
+  --placeholder-bg: #99c9ff;
+  --placeholder-text: #5a89dd;
+}
+
+/* General Styling */
+html {
+  font-size: 62%;
+}
+
+html, body {
+  font-family: "Lato", sans-serif;
+  background-color: var(--gray-05);
+  color: var(--gray-90);
+}
+
+a {
+  text-decoration: none;
+  color: var(--gray-75);
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Utilities */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Typography */
+p {
+  font-size: 2.2rem;
+}
+
+h1, h2, h3 {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 500;
+}
+
+.aside-text-alt {
+  text-align: right;
+}
+
+.main .form input[type=submit],
+.btn {
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+  font-size: 2rem;
+  border: 4px solid var(--gray-90);
+  background-color: var(--gray-15);
+  color: var(--gray-90);
+  padding: 16px;
+}
+
+.main .form input[type=submit]:hover,
+.btn:hover {
+  background-color: var(--gray-10);
+}
+
+.btn-projects {
+  margin: 12px;
+}
+
+/* Navigation */
+.nav {
+  position: sticky;
+  top: 0;
+  background-color: var(--gray-90);
+  padding-block: 6px;
+}
+
+nav .nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .logo-img {
+  width: 225px;
+  padding-top: 8px;
+}
+
+nav .nav-links {
+  display: flex;
+  gap: 16px;
+  font-size: 1.6rem;
+}
+
+nav .nav-links a {
+  color: var(--yellow);
+  display: inline-block;
+  padding: 8px;
+  border-radius: 10px;
+}
+
+nav .nav-links a:hover {
+  background-color: var(--gray-00);
+  color: var(--gray-90);
+}
+
+nav .nav-link i {
+  margin-left: 8px;
+}
+
+/* Header */
+.header {
+  margin-block: 64px;
+}
+
+.header .header-container {
+  max-width: 775px;
+  padding-inline: 12px;
+  margin: 0 auto;
+}
+
+.header #title {
+  font-size: 4.4rem;
+  font-weight: 600;
+  margin-block: 36px;
+}
+
+.header #title,
+.header .title-icon {
+  text-align: center;
+}
+
+.header .title-icon {
+  display: block;
+  font-size: 9.6rem;
+  margin-bottom: 36px;
+}
+
+.header .header-text a {
+  color: var(--gray-90);
+  border-bottom: 1px solid var(--gray-90);
+}
+
+.header .header-text a:hover,
+.footer-link:hover {
+  background-color: var(--gray-90);
+  color: var(--gray-05);
+}
+
+.header .header-text,
+.header .aside-text {
+  line-height: 1.5;
+}
+
+.header .header-aside {
+  margin-block: 32px;
+  padding: 18px;
+  color: var(--aside-text);
+  border: 1px solid var(--aside-border);
+  background-color: var(--aside-bg);
+}
+
+.header .aside-text {
+  font-size: 1.8rem;
+}
+
+.header .aside-text a {
+  color: var(--aside-text);
+  border-bottom: 1px solid var(--aside-text);
+}
+
+.header .aside-text a:hover {
+  color: var(--aside-bg);
+  background-color: var(--aside-text);
+}
+
+/* Main Section */
+.main {
+  margin-block: 64px;
+}
+
+.main .form {
+  padding-inline: 8px;
+}
+
+.main .form .form-fieldset {
+  margin-bottom: 64px;
+}
+
+.main .form .form-fieldset-legend {
+  width: 100%;
+  font-size: 2.4rem;
+  font-weight: 800;
+  padding-bottom: 2px;
+  border-bottom: 4px solid var(--gray-10);
+}
+
+.main .form label,
+.main .form input,
+.main .form select,
+.main .form textarea {
+  display: block;
+  font-size: 2rem;
+  padding: 4px 8px;
+}
+
+.main .form input[type=text],
+.main .form input[type=email],
+.main .form input[type=number],
+.main .form select,
+.main .form textarea {
+  width: 80%;
+}
+
+.main .form label {
+  margin-top: 12px;
+  margin-bottom: 6px;
+}
+
+.main .form label span {
+  font-size: 1.6rem;
+  font-style: italic;
+}
+
+.main .form input[type=radio],
+.main .form input[type=checkbox] {
+  display: inline;
+  margin-right: 12px;
+}
+
+.main .form textarea {
+  resize: none;
+}
+
+/* Projects */
+.projects-accordion-menu {
+  background-color: #fff;
+}
+
+.projects-detail {
+  padding-block: 12px;
+  margin-bottom: 4px;
+}
+
+.projects-title {
+  font-weight: 600;
+  font-size: 2.4rem;
+  padding: 32px 24px;
+  border-bottom: 1px solid var(--gray-10);
+}
+
+.projects-title:hover {
+  cursor: pointer;
+  background-color: #ccc;
+}
+
+.projects-image {
+  width: 90%;
+  padding: 12px;
+}
+
+.projects-info {
+  padding: 12px;
+  line-height: 1.5;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding-block: 16px;
+  background-color: var(--gray-15);
+}
+
+footer .footer-text {
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  /* Navigation */
+  .nav-container {
+    flex-direction: column;
+    gap: 16px;
+  }
+  /* Header */
+  header #title {
+    font-size: 32px;
+  }
+  header .header-text,
+  header aside .aside-text {
+    line-height: 1.5;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
