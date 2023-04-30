@@ -95,22 +95,6 @@ nav .nav-link i {
     font-size: 9.6rem;;
     margin-bottom: 36px;
 }
-
-.header .header-text a {
-    color: var(--gray-90);
-    border-bottom: 1px solid var(--gray-90);
-}
-
-.header .header-text a:hover,
-.footer-link:hover {
-    background-color: var(--gray-90);
-    color: var(--gray-05);
-}
-
-.header .header-text,
-.header .aside-text {
-    line-height: 1.5;
-}
 /* Main Section */
 .main .form {
     padding-inline: 8px;
