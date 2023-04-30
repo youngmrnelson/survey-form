@@ -118,7 +118,7 @@ table {
   padding: 12px;
 }
 .p-3 {
-  padding: 16px;
+  padding: 24px;
 }
 
 .my-1 {
@@ -145,6 +145,11 @@ table {
   justify-content: space-between;
 }
 
+@media (max-width: 767px) {
+  .flex-d--c {
+    flex-direction: column;
+  }
+}
 a {
   text-decoration: none;
 }
@@ -160,6 +165,23 @@ p {
 h1, h2, h3 {
   font-family: "Roboto Mono", monospace;
   font-weight: 500;
+}
+
+.aside {
+  color: var(--aside-text);
+  border: 1px solid var(--aside-border);
+  background: var(--aside-bg);
+}
+.aside-text {
+  font-size: 1.8rem;
+}
+.aside-text-link {
+  color: var(--aside-text);
+  border-bottom: 1px solid var(--aside-text);
+}
+.aside-text-link:hover {
+  color: var(--aside-bg);
+  background: var(--aside-text);
 }
 
 /* General Styling */
@@ -267,28 +289,6 @@ nav .nav-link i {
 .header .header-text,
 .header .aside-text {
   line-height: 1.5;
-}
-
-.header .header-aside {
-  margin-block: 32px;
-  padding: 18px;
-  color: var(--aside-text);
-  border: 1px solid var(--aside-border);
-  background-color: var(--aside-bg);
-}
-
-.header .aside-text {
-  font-size: 1.8rem;
-}
-
-.header .aside-text a {
-  color: var(--aside-text);
-  border-bottom: 1px solid var(--aside-text);
-}
-
-.header .aside-text a:hover {
-  color: var(--aside-bg);
-  background-color: var(--aside-text);
 }
 
 /* Main Section */
