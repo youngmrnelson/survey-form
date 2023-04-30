@@ -1,0 +1,23 @@
+// Variables
+:root {
+    --gray-00: #fff;
+    --gray-05: #f5f6f7;
+    --gray-10: #dfdfe2;
+    --gray-15: #d0d0d5;
+    --gray-90: #0a0a23;
+    --gray-85: #1b1b32;
+    --gray-80: #2a2a40;
+    --gray-75: #3b3b4f;
+    --yellow: #f1be32;
+    --aside-bg: #d9edf7;
+    --aside-border: #d4eef3;
+    --aside-text: #5b90a9;
+    --placeholder-bg: #99c9ff;
+    --placeholder-text: #5a89dd;
+}
+
+// Container
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}

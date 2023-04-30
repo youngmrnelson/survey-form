@@ -1,0 +1,14 @@
+// Flexbox Layouts
+.flex {
+    display: flex;
+    
+    // AI-C
+    &-ai--c {
+        align-items: center;
+    }
+
+    // JC-SB
+    &-jc--sb {
+        justify-content: space-between;
+    }
+}

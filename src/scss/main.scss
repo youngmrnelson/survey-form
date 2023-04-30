@@ -1,26 +1,10 @@
 @use 'reset';
+@use 'utilities';
+@use 'layout';
 
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
-
-/* Variables */
-:root {
-    --gray-00: #fff;
-    --gray-05: #f5f6f7;
-    --gray-10: #dfdfe2;
-    --gray-15: #d0d0d5;
-    --gray-90: #0a0a23;
-    --gray-85: #1b1b32;
-    --gray-80: #2a2a40;
-    --gray-75: #3b3b4f;
-    --yellow: #f1be32;
-    --aside-bg: #d9edf7;
-    --aside-border: #d4eef3;
-    --aside-text: #5b90a9;
-    --placeholder-bg: #99c9ff;
-    --placeholder-text: #5a89dd;
-}
 
 /* General Styling */
 html {
@@ -44,13 +28,6 @@ li {
 
 img {
     max-width: 100%;
-}
-
-
-/* Utilities */
-.container {
-    max-width: 1000px;
-    margin: 0 auto;
 }
 
 /* Typography */
@@ -96,11 +73,11 @@ h1, h2, h3 {
     padding-block: 6px;
 }
 
-nav .nav-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
+// nav .nav-container {
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+// }
 
 nav .logo-img {
     width: 225px;
