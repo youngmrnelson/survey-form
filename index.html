@@ -75,340 +75,343 @@
         </ul>
       </div>
     </nav>
-    <!-- Header -->
-    <header class="header my-3">
-      <div class="container-tertiary m-auto p-2">
-        <!-- Secondary Header Content -->
-        <aside class="aside p-3 py-2">
-          <p class="aside-text">
-            Thank you for visiting my website! If you enjoyed your experience
-            here and would like to learn more about me or see more of my work,
-            please feel free to check out my
-            <a
-              href="https://github.com/youngmrnelson"
-              target="_blank"
-              class="aside-text-link"
-              >GitHub</a
-            >
-            account and
-            <a
-              href="https://www.linkedin.com/in/daniel-nelson-9151a6212/"
-              target="_blank"
-              class="aside-text-link"
-              >LinkedIn</a
-            >
-            profile. Thank you again for your interest, and I look forward to
-            connecting with you!
-          </p>
-        </aside>
-        <!-- Main Header Content -->
-        <h1 id="title">freeCodeCamp Survey</h1>
-        <p><i class="fa-regular fa-clipboard title-icon"></i></p>
-        <p id="description" class="header-text">
-          Welcome to my survey form, the first project in
-          <a
-            href="https://www.freecodecamp.org/learn/2022/responsive-web-design/"
-            target="_blank"
-            class="header-text-link"
-            >freeCodeCamp's</a
-          >
-          Responsive Web Design curriculum. This survey contains various types
-          of form elements, such as text inputs, radio buttons, checkboxes, and
-          dropdown menus, as well as a submit button.
-        </p>
-        <br />
-        <p class="header-text">
-          The purpose of this project is to practice my HTML and CSS skills by
-          creating a simple, user-friendly form that collects data from users.
-        </p>
-      </div>
-    </header>
-    <!-- Main Section -->
+    <!-- Main Content -->
     <main class="main my-3">
-      <div class="container m-auto">
-        <!-- Form -->
-        <form action="#" id="survey-form" class="form">
-          <fieldset class="form-fieldset">
-            <legend class="form-fieldset-legend">User Info</legend>
-            <label for="name" id="name-label">Name</label>
-            <input
-              type="text"
-              name="name"
-              id="name"
-              placeholder="Enter your name"
-              required
-            />
-            <label for="email" id="email-label">Email</label>
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="Enter your Email"
-              required
-            />
-            <label for="number" id="number-label"
-              >Age <span>(optional)</span></label
-            >
-            <input
-              type="number"
-              name="number"
-              id="number"
-              min="12"
-              max="100"
-              placeholder="Age"
-            />
-          </fieldset>
-          <fieldset class="form-fieldset">
-            <legend class="form-fieldset-legend">User Survey</legend>
-            <label for="dropdown"
-              >Which option best describes your current role?</label
-            >
-            <select name="dropdown" id="dropdown">
-              <option value="0">Select current role</option>
-              <option value="1">Student</option>
-              <option value="2">Full Time Job</option>
-              <option value="3">Full Time Learner</option>
-              <option value="4">Perfer not to say</option>
-              <option value="5">Other</option>
-            </select>
-            <label for="recommendation"
-              >Would you recommend freeCodeCamp to a friend?</label
-            >
-            <label for="definitely"
-              ><input
-                type="radio"
-                name="recommendation"
-                id="definitely"
-                value="definitely"
-              />
-              Definitely</label
-            >
-            <label for="maybe"
-              ><input
-                type="radio"
-                name="recommendation"
-                id="maybe"
-                value="maybe"
-              />
-              Maybe</label
-            >
-            <label for="not-sure"
-              ><input
-                type="radio"
-                name="recommendation"
-                id="not-sure"
-                value="not-sure"
-              />
-              Not Sure</label
-            >
-            <label for="dropdown-2"
-              >What is your favorite feature of freeCodeCamp?</label
-            >
-            <select name="dropdown-2">
-              <option value="0">Select an option</option>
-              <option value="1">Challenges</option>
-              <option value="2">Projects</option>
-              <option value="3">Community</option>
-              <option value="4">Open Source</option>
-            </select>
-          </fieldset>
-          <fieldset class="form-fieldset">
-            <legend class="form-fieldset-legend">Additional Comments</legend>
-            <label for="improvements"
-              >What would you like to see improved?
-              <span>(Check all that apply)</span></label
-            >
-            <label for="back-end"
-              ><input
-                type="checkbox"
-                name="improvements"
-                value="back-end"
-                id="back-end"
-              />
-              Front-end Projects</label
-            >
-            <label for="data-visualization"
-              ><input
-                type="checkbox"
-                name="improvements"
-                value="data-visualization"
-                id="data-visualization"
-              />
-              Data Visualization</label
-            >
-            <label for="challenges"
-              ><input
-                type="checkbox"
-                name="improvements"
-                value="challenges"
-                id="challenges"
-              />
-              Challenges</label
-            >
-            <label for="open-source"
-              ><input
-                type="checkbox"
-                name="improvements"
-                value="open-source"
-                id="open-source"
-              />
-              Open Source Community</label
-            >
-            <label for="gitter"
-              ><input
-                type="checkbox"
-                name="improvements"
-                value="gitter"
-                id="gitter"
-              />
-              Gitter help rooms</label
-            >
-            <label for="videos"
-              ><input
-                type="checkbox"
-                name="improvements"
-                value="videos"
-                id="videos"
-              />
-              Videos</label
-            >
-            <label for="city-meetups"
-              ><input
-                type="checkbox"
-                name="improvements"
-                value="city-meetups"
-                id="city-meetups"
-              />
-              City Meetups</label
-            >
-            <label for="wiki"
-              ><input
-                type="checkbox"
-                name="improvements"
-                value="wiki"
-                id="wiki"
-              />
-              Wiki</label
-            >
-            <label for="forum"
-              ><input
-                type="checkbox"
-                name="improvements"
-                value="forum"
-                id="forum"
-              />
-              Forum</label
-            >
-            <label for="additional-courses"
-              ><input
-                type="checkbox"
-                name="improvements"
-                value="additional-courses"
-                id="additional-courses"
-              />
-              Additional Courses</label
-            >
-            <label for="comments">Any comments or suggestions?</label>
-            <textarea
-              name="comments"
-              id="comments"
-              rows="5"
-              placeholder="Enter your comment here..."
-            ></textarea>
-          </fieldset>
-          <input id="submit" type="submit" value="Submit" class="btn" />
-        </form>
-      </div>
-    </main>
-    <!-- Projects Section -->
-    <section class="section projects">
-      <header class="header">
+      <!-- Header -->
+      <header class="header my-3">
         <div class="container-tertiary m-auto p-2">
-          <!-- Projects Aside -->
+          <!-- Secondary Header Content -->
           <aside class="aside p-3 py-2">
             <p class="aside-text">
-              I want to invite you to check out some of the other web projects
-              I've been working on. From personal websites to fun side projects,
-              I've been building and experimenting with various web
-              technologies.
-            </p>
-            <p class="aside-text">
-              You can find all of my projects on my
+              Thank you for visiting my website! If you enjoyed your experience
+              here and would like to learn more about me or see more of my work,
+              please feel free to check out my
               <a
                 href="https://github.com/youngmrnelson"
                 target="_blank"
                 class="aside-text-link"
                 >GitHub</a
               >
-              profile, where I showcase my coding skills and creativity. I'd
-              love for you to take a look and explore the different websites
-              I've built. Your feedback and suggestions are always appreciated!
-            </p>
-            <p class="aside-text aside-text-alt">
-              Thank you, <br /><a
+              account and
+              <a
                 href="https://www.linkedin.com/in/daniel-nelson-9151a6212/"
                 target="_blank"
                 class="aside-text-link"
-                >Daniel Nelson</a
+                >LinkedIn</a
               >
+              profile. Thank you again for your interest, and I look forward to
+              connecting with you!
             </p>
           </aside>
-          <!-- Projects Accordion -->
-          <section class="projects-accordion-menu my-3">
-            <!-- Project 1 -->
-            <details class="projects-detail">
-              <summary class="projects-title">Tribute Page</summary>
-              <img
-                src="images/tribute-page-prev.png"
-                alt="Front page of tribute page project"
-                class="projects-image"
-              />
-              <p class="projects-info">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
-                quia libero perspiciatis consectetur, perferendis quo totam
-                repellat odio rem aliquam!
-              </p>
-              <a
-                href="https://youngmrnelson.github.io/tribute-page/"
-                target="_blank"
-                class="btn btn-projects"
-                >View Project</a
-              >
-            </details>
-            <!-- Project 2 -->
-            <details class="projects-detail">
-              <summary class="projects-title">
-                Technical Documentation Page
-              </summary>
-              <img
-                src="images/technical-doc-prev.png"
-                alt="Front page of technical documentation page project"
-                class="projects-image"
-              />
-              <p class="projects-info">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
-                quia libero perspiciatis consectetur, perferendis quo totam
-                repellat odio rem aliquam!
-              </p>
-              <a
-                href="https://youngmrnelson.github.io/technical-documentation-page/"
-                target="_blank"
-                class="btn btn-projects"
-                >View Project</a
-              >
-            </details>
-          </section>
+          <!-- Main Header Content -->
+          <h1 id="title">freeCodeCamp Survey</h1>
+          <p><i class="fa-regular fa-clipboard title-icon"></i></p>
+          <p id="description" class="p-main">
+            Welcome to my survey form, the first project in
+            <a
+              href="https://www.freecodecamp.org/learn/2022/responsive-web-design/"
+              target="_blank"
+              class="p-main-link"
+              >freeCodeCamp's</a
+            >
+            Responsive Web Design curriculum. This survey contains various types
+            of form elements, such as text inputs, radio buttons, checkboxes,
+            and dropdown menus, as well as a submit button.
+          </p>
+          <br />
+          <p class="p-main">
+            The purpose of this project is to practice my HTML and CSS skills by
+            creating a simple, user-friendly form that collects data from users.
+          </p>
         </div>
       </header>
-    </section>
+      <section class="survey">
+        <div class="container m-auto">
+          <!-- Form -->
+          <form action="#" id="survey-form" class="form">
+            <fieldset class="form-fieldset">
+              <legend class="form-fieldset-legend">User Info</legend>
+              <label for="name" id="name-label">Name</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Enter your name"
+                required
+              />
+              <label for="email" id="email-label">Email</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Enter your Email"
+                required
+              />
+              <label for="number" id="number-label"
+                >Age <span>(optional)</span></label
+              >
+              <input
+                type="number"
+                name="number"
+                id="number"
+                min="12"
+                max="100"
+                placeholder="Age"
+              />
+            </fieldset>
+            <fieldset class="form-fieldset">
+              <legend class="form-fieldset-legend">User Survey</legend>
+              <label for="dropdown"
+                >Which option best describes your current role?</label
+              >
+              <select name="dropdown" id="dropdown">
+                <option value="0">Select current role</option>
+                <option value="1">Student</option>
+                <option value="2">Full Time Job</option>
+                <option value="3">Full Time Learner</option>
+                <option value="4">Perfer not to say</option>
+                <option value="5">Other</option>
+              </select>
+              <label for="recommendation"
+                >Would you recommend freeCodeCamp to a friend?</label
+              >
+              <label for="definitely"
+                ><input
+                  type="radio"
+                  name="recommendation"
+                  id="definitely"
+                  value="definitely"
+                />
+                Definitely</label
+              >
+              <label for="maybe"
+                ><input
+                  type="radio"
+                  name="recommendation"
+                  id="maybe"
+                  value="maybe"
+                />
+                Maybe</label
+              >
+              <label for="not-sure"
+                ><input
+                  type="radio"
+                  name="recommendation"
+                  id="not-sure"
+                  value="not-sure"
+                />
+                Not Sure</label
+              >
+              <label for="dropdown-2"
+                >What is your favorite feature of freeCodeCamp?</label
+              >
+              <select name="dropdown-2">
+                <option value="0">Select an option</option>
+                <option value="1">Challenges</option>
+                <option value="2">Projects</option>
+                <option value="3">Community</option>
+                <option value="4">Open Source</option>
+              </select>
+            </fieldset>
+            <fieldset class="form-fieldset">
+              <legend class="form-fieldset-legend">Additional Comments</legend>
+              <label for="improvements"
+                >What would you like to see improved?
+                <span>(Check all that apply)</span></label
+              >
+              <label for="back-end"
+                ><input
+                  type="checkbox"
+                  name="improvements"
+                  value="back-end"
+                  id="back-end"
+                />
+                Front-end Projects</label
+              >
+              <label for="data-visualization"
+                ><input
+                  type="checkbox"
+                  name="improvements"
+                  value="data-visualization"
+                  id="data-visualization"
+                />
+                Data Visualization</label
+              >
+              <label for="challenges"
+                ><input
+                  type="checkbox"
+                  name="improvements"
+                  value="challenges"
+                  id="challenges"
+                />
+                Challenges</label
+              >
+              <label for="open-source"
+                ><input
+                  type="checkbox"
+                  name="improvements"
+                  value="open-source"
+                  id="open-source"
+                />
+                Open Source Community</label
+              >
+              <label for="gitter"
+                ><input
+                  type="checkbox"
+                  name="improvements"
+                  value="gitter"
+                  id="gitter"
+                />
+                Gitter help rooms</label
+              >
+              <label for="videos"
+                ><input
+                  type="checkbox"
+                  name="improvements"
+                  value="videos"
+                  id="videos"
+                />
+                Videos</label
+              >
+              <label for="city-meetups"
+                ><input
+                  type="checkbox"
+                  name="improvements"
+                  value="city-meetups"
+                  id="city-meetups"
+                />
+                City Meetups</label
+              >
+              <label for="wiki"
+                ><input
+                  type="checkbox"
+                  name="improvements"
+                  value="wiki"
+                  id="wiki"
+                />
+                Wiki</label
+              >
+              <label for="forum"
+                ><input
+                  type="checkbox"
+                  name="improvements"
+                  value="forum"
+                  id="forum"
+                />
+                Forum</label
+              >
+              <label for="additional-courses"
+                ><input
+                  type="checkbox"
+                  name="improvements"
+                  value="additional-courses"
+                  id="additional-courses"
+                />
+                Additional Courses</label
+              >
+              <label for="comments">Any comments or suggestions?</label>
+              <textarea
+                name="comments"
+                id="comments"
+                rows="5"
+                placeholder="Enter your comment here..."
+              ></textarea>
+            </fieldset>
+            <input id="submit" type="submit" value="Submit" class="btn" />
+          </form>
+        </div>
+      </section>
+      <!-- Projects Section -->
+      <section class="section projects">
+        <header class="header">
+          <div class="container-tertiary m-auto p-2">
+            <!-- Projects Aside -->
+            <aside class="aside p-3 py-2">
+              <p class="aside-text">
+                I want to invite you to check out some of the other web projects
+                I've been working on. From personal websites to fun side
+                projects, I've been building and experimenting with various web
+                technologies.
+              </p>
+              <p class="aside-text">
+                You can find all of my projects on my
+                <a
+                  href="https://github.com/youngmrnelson"
+                  target="_blank"
+                  class="aside-text-link"
+                  >GitHub</a
+                >
+                profile, where I showcase my coding skills and creativity. I'd
+                love for you to take a look and explore the different websites
+                I've built. Your feedback and suggestions are always
+                appreciated!
+              </p>
+              <p class="aside-text aside-text-alt">
+                Thank you, <br /><a
+                  href="https://www.linkedin.com/in/daniel-nelson-9151a6212/"
+                  target="_blank"
+                  class="aside-text-link"
+                  >Daniel Nelson</a
+                >
+              </p>
+            </aside>
+            <!-- Projects Accordion -->
+            <section class="projects-accordion-menu my-3">
+              <!-- Project 1 -->
+              <details class="projects-detail">
+                <summary class="projects-title">Tribute Page</summary>
+                <img
+                  src="images/tribute-page-prev.png"
+                  alt="Front page of tribute page project"
+                  class="projects-image"
+                />
+                <p class="projects-info">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Fugiat quia libero perspiciatis consectetur, perferendis quo
+                  totam repellat odio rem aliquam!
+                </p>
+                <a
+                  href="https://youngmrnelson.github.io/tribute-page/"
+                  target="_blank"
+                  class="btn btn-projects"
+                  >View Project</a
+                >
+              </details>
+              <!-- Project 2 -->
+              <details class="projects-detail">
+                <summary class="projects-title">
+                  Technical Documentation Page
+                </summary>
+                <img
+                  src="images/technical-doc-prev.png"
+                  alt="Front page of technical documentation page project"
+                  class="projects-image"
+                />
+                <p class="projects-info">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Fugiat quia libero perspiciatis consectetur, perferendis quo
+                  totam repellat odio rem aliquam!
+                </p>
+                <a
+                  href="https://youngmrnelson.github.io/technical-documentation-page/"
+                  target="_blank"
+                  class="btn btn-projects"
+                  >View Project</a
+                >
+              </details>
+            </section>
+          </div>
+        </header>
+      </section>
+    </main>
     <!-- Footer -->
     <footer>
-      <p class="footer-text">
+      <p class="p-main">
         Created by
         <a
           href="https://www.linkedin.com/in/daniel-nelson-9151a6212/"
           target="_blank"
-          class="footer-link"
+          class="p-main-link"
           >Daniel Nelson</a
         >
         &copy; 2023

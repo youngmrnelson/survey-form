@@ -167,6 +167,18 @@ h1, h2, h3 {
   font-weight: 500;
 }
 
+.p-main {
+  font-size: 2rem;
+}
+.p-main-link {
+  color: var(--gray-90);
+  border-bottom: 1px solid var(--gray-90);
+}
+.p-main-link:hover {
+  color: var(--gray-05);
+  background: var(--gray-90);
+}
+
 .aside {
   color: var(--aside-text);
   border: 1px solid var(--aside-border);
@@ -273,22 +285,6 @@ nav .nav-link i {
   display: block;
   font-size: 9.6rem;
   margin-bottom: 36px;
-}
-
-.header .header-text a {
-  color: var(--gray-90);
-  border-bottom: 1px solid var(--gray-90);
-}
-
-.header .header-text a:hover,
-.footer-link:hover {
-  background-color: var(--gray-90);
-  color: var(--gray-05);
-}
-
-.header .header-text,
-.header .aside-text {
-  line-height: 1.5;
 }
 
 /* Main Section */
