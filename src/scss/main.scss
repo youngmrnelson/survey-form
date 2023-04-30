@@ -111,29 +111,6 @@ nav .nav-link i {
 .header .aside-text {
     line-height: 1.5;
 }
-
-.header .header-aside {
-    margin-block: 32px;
-    padding: 18px;
-    color: var(--aside-text);
-    border: 1px solid var(--aside-border);
-    background-color: var(--aside-bg);
-}
-
-.header .aside-text {
-    font-size: 1.8rem;
-}
-
-.header .aside-text a {
-    color: var(--aside-text);
-    border-bottom: 1px solid var(--aside-text);
-}
-
-.header .aside-text a:hover {
-    color: var(--aside-bg);
-    background-color: var(--aside-text);
-}
-
 /* Main Section */
 .main .form {
     padding-inline: 8px;

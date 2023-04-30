@@ -1,0 +1,20 @@
+// Aside Container
+.aside {
+    color: var(--aside-text);
+    border: 1px solid var(--aside-border);
+    background: var(--aside-bg);
+
+    &-text {
+        font-size: 1.8rem;
+
+        &-link {
+            color: var(--aside-text);
+            border-bottom: 1px solid var(--aside-text);
+
+            &:hover {
+                color: var(--aside-bg);
+                background: var(--aside-text);
+            }
+        }
+    }
+}
