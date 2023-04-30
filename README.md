@@ -4,7 +4,7 @@ This is a web application that aims to replicate the functionality of [https://s
 
 ## Live Preview
 
-[https://youngmrnelson.github.io/survey-form-FCC/](https://youngmrnelson.github.io/survey-form-FCC/)
+[https://youngmrnelson.github.io/survey-form](https://youngmrnelson.github.io/survey-form)
 
 ## User Stories
 
