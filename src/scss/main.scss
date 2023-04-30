@@ -1,10 +1,7 @@
 @use 'reset';
 @use 'utilities';
 @use 'layout';
-
-/* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+@use 'typography';
 
 /* General Styling */
 html {
@@ -13,31 +10,13 @@ html {
 
 html, body {
     font-family: 'Lato', sans-serif;
+    line-height: 1.5;
     background-color: var(--gray-05);
     color: var(--gray-90);
 }
 
-a {
-    text-decoration: none;
-    color: var(--gray-75);
-}
-
-li {
-    list-style: none;
-}
-
 img {
     max-width: 100%;
-}
-
-/* Typography */
-p {
-    font-size: 2.2rem;
-}
-
-h1, h2, h3 {
-    font-family: 'Roboto Mono', monospace;
-    font-weight: 500;
 }
 
 .aside-text-alt {
@@ -73,20 +52,12 @@ h1, h2, h3 {
     padding-block: 6px;
 }
 
-// nav .nav-container {
-//     display: flex;
-//     align-items: center;
-//     justify-content: space-between;
-// }
-
 nav .logo-img {
     width: 225px;
     padding-top: 8px;
 }
 
 nav .nav-links {
-    display: flex;
-    gap: 16px;
     font-size: 1.6rem;
 }
 
