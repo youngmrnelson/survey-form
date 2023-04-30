@@ -2,6 +2,7 @@
 @use 'utilities';
 @use 'layout';
 @use 'typography';
+@use 'components';
 
 /* General Styling */
 html {
@@ -49,7 +50,6 @@ img {
     position: sticky;
     top: 0;
     background-color: var(--gray-90);
-    padding-block: 6px;
 }
 
 nav .logo-img {
@@ -79,16 +79,6 @@ nav .nav-link i {
 }
 
 /* Header */
-.header {
-    margin-block: 64px;
-}
-
-.header .header-container {
-    max-width: 775px;
-    padding-inline: 12px;
-    margin: 0 auto;
-}
-
 .header #title {
     font-size: 4.4rem;
     font-weight: 600;
@@ -145,10 +135,6 @@ nav .nav-link i {
 }
 
 /* Main Section */
-.main {
-    margin-block: 64px;
-}
-
 .main .form {
     padding-inline: 8px;
 }
