@@ -1,3 +1,22 @@
+// Buttons
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    font-size: 2rem;
+    color: var(--gray-90);
+    border: 4px solid var(--gray-90);
+    background: var(--gray-15);
+    padding: 16px;
+
+    &-form {
+        width: 60%;
+    }
+
+    &:hover {
+        background: var(--gray-10);
+    }
+}
+
 // Aside Container
 .aside {
     color: var(--aside-text);

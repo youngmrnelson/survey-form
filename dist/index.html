@@ -76,9 +76,9 @@
       </div>
     </nav>
     <!-- Main Content -->
-    <main class="main my-3">
+    <main class="main my-4">
       <!-- Header -->
-      <header class="header my-3">
+      <header class="header my-4">
         <div class="container-tertiary m-auto p-2">
           <!-- Secondary Header Content -->
           <aside class="aside p-3 py-2">
@@ -104,8 +104,8 @@
             </p>
           </aside>
           <!-- Main Header Content -->
-          <h1 id="title">freeCodeCamp Survey</h1>
-          <p><i class="fa-regular fa-clipboard title-icon"></i></p>
+          <h1 id="title" class="h-main my-3 ta-c">freeCodeCamp Survey</h1>
+          <p><i class="fa-regular fa-clipboard h-icon ta-c mb-3"></i></p>
           <p id="description" class="p-main">
             Welcome to my survey form, the first project in
             <a
@@ -125,46 +125,55 @@
           </p>
         </div>
       </header>
-      <section class="survey">
-        <div class="container m-auto">
+      <section class="survey my-4">
+        <div class="container-secondary m-auto">
           <!-- Form -->
           <form action="#" id="survey-form" class="form">
-            <fieldset class="form-fieldset">
-              <legend class="form-fieldset-legend">User Info</legend>
-              <label for="name" id="name-label">Name</label>
+            <!-- Fieldset: User Info -->
+            <fieldset class="form-fieldset mb-4">
+              <legend class="form-fieldset-legend pb-1">User Info</legend>
+              <label for="name" id="name-label" class="form-label my-1"
+                >Name</label
+              >
               <input
                 type="text"
                 name="name"
                 id="name"
+                class="p-1 form-input"
                 placeholder="Enter your name"
                 required
               />
-              <label for="email" id="email-label">Email</label>
+              <label for="email" id="email-label" class="form-label my-1"
+                >Email</label
+              >
               <input
                 type="email"
                 name="email"
                 id="email"
+                class="p-1 form-input"
                 placeholder="Enter your Email"
                 required
               />
-              <label for="number" id="number-label"
+              <label for="number" id="number-label" class="form-label my-1"
                 >Age <span>(optional)</span></label
               >
               <input
                 type="number"
                 name="number"
                 id="number"
+                class="p-1 form-input"
                 min="12"
                 max="100"
                 placeholder="Age"
               />
             </fieldset>
-            <fieldset class="form-fieldset">
-              <legend class="form-fieldset-legend">User Survey</legend>
-              <label for="dropdown"
+            <!-- Fieldset: User Survey -->
+            <fieldset class="form-fieldset mb-4">
+              <legend class="form-fieldset-legend pb-1">User Survey</legend>
+              <label for="dropdown" class="form-label my-1"
                 >Which option best describes your current role?</label
               >
-              <select name="dropdown" id="dropdown">
+              <select name="dropdown" id="dropdown" class="p-1 form-input">
                 <option value="0">Select current role</option>
                 <option value="1">Student</option>
                 <option value="2">Full Time Job</option>
@@ -172,10 +181,10 @@
                 <option value="4">Perfer not to say</option>
                 <option value="5">Other</option>
               </select>
-              <label for="recommendation"
+              <label for="recommendation" class="form-label my-1"
                 >Would you recommend freeCodeCamp to a friend?</label
               >
-              <label for="definitely"
+              <label for="definitely" class="form-label my-1"
                 ><input
                   type="radio"
                   name="recommendation"
@@ -184,7 +193,7 @@
                 />
                 Definitely</label
               >
-              <label for="maybe"
+              <label for="maybe" class="form-label my-1"
                 ><input
                   type="radio"
                   name="recommendation"
@@ -193,7 +202,7 @@
                 />
                 Maybe</label
               >
-              <label for="not-sure"
+              <label for="not-sure" class="form-label my-1"
                 ><input
                   type="radio"
                   name="recommendation"
@@ -202,10 +211,10 @@
                 />
                 Not Sure</label
               >
-              <label for="dropdown-2"
+              <label for="dropdown-2" class="form-label my-1"
                 >What is your favorite feature of freeCodeCamp?</label
               >
-              <select name="dropdown-2">
+              <select name="dropdown-2" class="p-1 form-input">
                 <option value="0">Select an option</option>
                 <option value="1">Challenges</option>
                 <option value="2">Projects</option>
@@ -213,13 +222,16 @@
                 <option value="4">Open Source</option>
               </select>
             </fieldset>
-            <fieldset class="form-fieldset">
-              <legend class="form-fieldset-legend">Additional Comments</legend>
-              <label for="improvements"
+            <!-- Fieldset: Additional Comments -->
+            <fieldset class="form-fieldset mb-4">
+              <legend class="form-fieldset-legend pb-1">
+                Additional Comments
+              </legend>
+              <label for="improvements" class="form-label my-1"
                 >What would you like to see improved?
-                <span>(Check all that apply)</span></label
+                <span class="form-label-sm">(Check all that apply)</span></label
               >
-              <label for="back-end"
+              <label for="back-end" class="form-label my-1"
                 ><input
                   type="checkbox"
                   name="improvements"
@@ -228,7 +240,7 @@
                 />
                 Front-end Projects</label
               >
-              <label for="data-visualization"
+              <label for="data-visualization" class="form-label my-1"
                 ><input
                   type="checkbox"
                   name="improvements"
@@ -237,7 +249,7 @@
                 />
                 Data Visualization</label
               >
-              <label for="challenges"
+              <label for="challenges" class="form-label my-1"
                 ><input
                   type="checkbox"
                   name="improvements"
@@ -246,7 +258,7 @@
                 />
                 Challenges</label
               >
-              <label for="open-source"
+              <label for="open-source" class="form-label my-1"
                 ><input
                   type="checkbox"
                   name="improvements"
@@ -255,7 +267,7 @@
                 />
                 Open Source Community</label
               >
-              <label for="gitter"
+              <label for="gitter" class="form-label my-1"
                 ><input
                   type="checkbox"
                   name="improvements"
@@ -264,7 +276,7 @@
                 />
                 Gitter help rooms</label
               >
-              <label for="videos"
+              <label for="videos" class="form-label my-1"
                 ><input
                   type="checkbox"
                   name="improvements"
@@ -273,7 +285,7 @@
                 />
                 Videos</label
               >
-              <label for="city-meetups"
+              <label for="city-meetups" class="form-label my-1"
                 ><input
                   type="checkbox"
                   name="improvements"
@@ -282,7 +294,7 @@
                 />
                 City Meetups</label
               >
-              <label for="wiki"
+              <label for="wiki" class="form-label my-1"
                 ><input
                   type="checkbox"
                   name="improvements"
@@ -291,7 +303,7 @@
                 />
                 Wiki</label
               >
-              <label for="forum"
+              <label for="forum" class="form-label my-1"
                 ><input
                   type="checkbox"
                   name="improvements"
@@ -300,7 +312,7 @@
                 />
                 Forum</label
               >
-              <label for="additional-courses"
+              <label for="additional-courses" class="form-label my-1"
                 ><input
                   type="checkbox"
                   name="improvements"
@@ -309,15 +321,23 @@
                 />
                 Additional Courses</label
               >
-              <label for="comments">Any comments or suggestions?</label>
+              <label for="comments" class="form-label my-1"
+                >Any comments or suggestions?</label
+              >
               <textarea
                 name="comments"
                 id="comments"
+                class="p-1 form-input"
                 rows="5"
                 placeholder="Enter your comment here..."
               ></textarea>
             </fieldset>
-            <input id="submit" type="submit" value="Submit" class="btn" />
+            <input
+              id="submit"
+              type="submit"
+              value="Submit"
+              class="btn btn-form"
+            />
           </form>
         </div>
       </section>
@@ -356,7 +376,7 @@
               </p>
             </aside>
             <!-- Projects Accordion -->
-            <section class="projects-accordion-menu my-3">
+            <section class="projects-accordion-menu my-4">
               <!-- Project 1 -->
               <details class="projects-detail">
                 <summary class="projects-title">Tribute Page</summary>
