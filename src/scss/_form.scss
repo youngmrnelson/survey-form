@@ -24,6 +24,10 @@
     select,
     textarea {
         width: 70%;
+
+        @media(max-width: 767px) {
+            width: 80%;
+        }
     }
 
     input[type="radio"],
