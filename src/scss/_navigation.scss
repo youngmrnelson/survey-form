@@ -1,0 +1,24 @@
+// Navigation
+.nav {
+    position: sticky;
+    top: 0;
+
+    &-logo-img {
+        width: 175px;
+    }
+
+    &-links {
+        font-size: 1.6rem;
+        
+        a {
+            color: var(--yellow);
+            display: inline-block;
+            border-radius: 10px;
+
+            &:hover {
+                background: var(--gray-00);
+                color: var(--gray-90);
+            }
+        }
+    }
+}

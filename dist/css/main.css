@@ -84,6 +84,9 @@ table {
 .bg-medium {
   background: var(--gray-10);
 }
+.bg-dark {
+  background: var(--gray-90);
+}
 
 .gap-1 {
   gap: 8px;
@@ -119,6 +122,9 @@ table {
   padding-bottom: 4px;
 }
 
+.p-0 {
+  padding: 4px;
+}
 .p-1 {
   padding: 8px;
 }
@@ -153,6 +159,10 @@ table {
 }
 .mb-4 {
   margin-bottom: 64px;
+}
+
+.ml-1 {
+  margin-left: 8px;
 }
 
 .m-auto {
@@ -253,6 +263,26 @@ h1, h2, h3 {
   background: var(--aside-text);
 }
 
+.nav {
+  position: sticky;
+  top: 0;
+}
+.nav-logo-img {
+  width: 175px;
+}
+.nav-links {
+  font-size: 1.6rem;
+}
+.nav-links a {
+  color: var(--yellow);
+  display: inline-block;
+  border-radius: 10px;
+}
+.nav-links a:hover {
+  background: var(--gray-00);
+  color: var(--gray-90);
+}
+
 .form-fieldset-legend {
   font-size: 2.4rem;
   font-weight: 800;
@@ -306,38 +336,6 @@ html, body {
 
 img {
   max-width: 100%;
-}
-
-/* Navigation */
-.nav {
-  position: sticky;
-  top: 0;
-  background-color: var(--gray-90);
-}
-
-nav .logo-img {
-  width: 225px;
-  padding-top: 8px;
-}
-
-nav .nav-links {
-  font-size: 1.6rem;
-}
-
-nav .nav-links a {
-  color: var(--yellow);
-  display: inline-block;
-  padding: 8px;
-  border-radius: 10px;
-}
-
-nav .nav-links a:hover {
-  background-color: var(--gray-00);
-  color: var(--gray-90);
-}
-
-nav .nav-link i {
-  margin-left: 8px;
 }
 
 /*# sourceMappingURL=main.css.map */
