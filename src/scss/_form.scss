@@ -23,7 +23,22 @@
     input[type="number"],
     select,
     textarea {
+        border: 1px solid var(--gray-10);
         width: 70%;
+
+        &:required:focus {
+            outline: 1px solid var(--gray-15);
+
+            &:valid {
+                outline-color: #40c057;
+                border-color: #40c057;
+            }
+
+            &:invalid {
+                outline-color: #e03131;
+                border-color: #e03131;
+            }
+        }
 
         @media(max-width: 767px) {
             width: 80%;
