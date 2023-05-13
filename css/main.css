@@ -302,7 +302,31 @@ h1, h2, h3 {
 .form input[type=number],
 .form select,
 .form textarea {
+  border: 1px solid var(--gray-10);
   width: 70%;
+}
+.form input[type=text]:required:focus,
+.form input[type=email]:required:focus,
+.form input[type=number]:required:focus,
+.form select:required:focus,
+.form textarea:required:focus {
+  outline: 1px solid var(--gray-15);
+}
+.form input[type=text]:required:focus:valid,
+.form input[type=email]:required:focus:valid,
+.form input[type=number]:required:focus:valid,
+.form select:required:focus:valid,
+.form textarea:required:focus:valid {
+  outline-color: #40c057;
+  border-color: #40c057;
+}
+.form input[type=text]:required:focus:invalid,
+.form input[type=email]:required:focus:invalid,
+.form input[type=number]:required:focus:invalid,
+.form select:required:focus:invalid,
+.form textarea:required:focus:invalid {
+  outline-color: #e03131;
+  border-color: #e03131;
 }
 @media (max-width: 767px) {
   .form input[type=text],
