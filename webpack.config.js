@@ -51,7 +51,7 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            title: 'Survey Form',
+            title: 'freeCodeCamp Survey Form',
             filename: 'index.html',
             template: 'src/template.html',
         })

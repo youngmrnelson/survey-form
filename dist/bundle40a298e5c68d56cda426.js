@@ -15,10 +15,183 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _components_Navbar_Navbar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/Navbar/Navbar */ "./src/components/Navbar/Navbar.js");
+/* harmony import */ var _components_Header_Header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/Header/Header */ "./src/components/Header/Header.js");
+/* harmony import */ var _components_Section_Section__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/Section/Section */ "./src/components/Section/Section.js");
+/* harmony import */ var _components_SurveyForm_SurveyForm__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/SurveyForm/SurveyForm */ "./src/components/SurveyForm/SurveyForm.js");
+/* harmony import */ var _components_Aside_ProjectsAside__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/Aside/ProjectsAside */ "./src/components/Aside/ProjectsAside.js");
+/* harmony import */ var _components_Footer_Footer__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/Footer/Footer */ "./src/components/Footer/Footer.js");
+
+
+
+
+
 
 
 function App() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Navbar_Navbar__WEBPACK_IMPORTED_MODULE_1__["default"], null);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Navbar_Navbar__WEBPACK_IMPORTED_MODULE_1__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Header_Header__WEBPACK_IMPORTED_MODULE_2__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Section_Section__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    classList: "survey my-4",
+    containerClasses: "container-secondary m-auto p-2",
+    content: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_SurveyForm_SurveyForm__WEBPACK_IMPORTED_MODULE_4__["default"], null)
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Section_Section__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    classList: "section project m-4",
+    containerClasses: "container-tertiary m-auto p-2",
+    content: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Aside_ProjectsAside__WEBPACK_IMPORTED_MODULE_5__["default"], null)
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Footer_Footer__WEBPACK_IMPORTED_MODULE_6__["default"], null));
+}
+
+/***/ }),
+
+/***/ "./src/components/Aside/Aside.js":
+/*!***************************************!*\
+  !*** ./src/components/Aside/Aside.js ***!
+  \***************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Aside)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+function Aside() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("aside", {
+    className: "aside p-3 py-2"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+    className: "aside-text"
+  }, "Thank you for visiting my website! If you enjoyed your experience here and would like to learn more about me or see more of my work, please feel free to check out my", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    href: "https://github.com/youngmrnelson",
+    target: "_blank",
+    className: "aside-text-link"
+  }, "GitHub"), "account and", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    href: "https://www.linkedin.com/in/daniel-nelson-9151a6212/",
+    target: "_blank",
+    className: "aside-text-link"
+  }, "LinkedIn"), "profile. Thank you again for your interest, and I look forward to connecting with you!"));
+}
+
+/***/ }),
+
+/***/ "./src/components/Aside/ProjectsAside.js":
+/*!***********************************************!*\
+  !*** ./src/components/Aside/ProjectsAside.js ***!
+  \***********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ ProjectsAside)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+function ProjectsAside() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("aside", {
+    className: "aside p-3 py-2"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+    className: "aside-text"
+  }, "I want to invite you to check out some of the other web projects I've been working on. From personal websites to fun side projects, I've been building and experimenting with various web technologies."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+    className: "aside-text"
+  }, "You can find all of my projects on my", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    href: "https://github.com/youngmrnelson",
+    target: "_blank",
+    className: "aside-text-link"
+  }, "GitHub"), "profile, where I showcase my coding skills and creativity. I'd love for you to take a look and explore the different websites I've built. Your feedback and suggestions are always appreciated!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+    className: "aside-text ta-r"
+  }, "Thank you, ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    href: "https://www.linkedin.com/in/daniel-nelson-9151a6212/",
+    target: "_blank",
+    className: "aside-text-link"
+  }, "Daniel Nelson")));
+}
+
+/***/ }),
+
+/***/ "./src/components/Fieldset/Fieldset.js":
+/*!*********************************************!*\
+  !*** ./src/components/Fieldset/Fieldset.js ***!
+  \*********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Fieldset)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+function Fieldset(props) {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("fieldset", {
+    className: "form-fieldset mb-4"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("legend", {
+    className: "form-fieldset-legend pb-1"
+  }, props.legend), props.fieldsetContent);
+}
+
+/***/ }),
+
+/***/ "./src/components/Footer/Footer.js":
+/*!*****************************************!*\
+  !*** ./src/components/Footer/Footer.js ***!
+  \*****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Footer)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+function Footer() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("footer", {
+    className: "ta-c p-2 bg-medium"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+    className: "p-main"
+  }, "Created by", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    href: "https://www.linkedin.com/in/daniel-nelson-9151a6212/",
+    target: "_blank",
+    className: "p-main-link"
+  }, "Daniel Nelson"), "\xA9 2023"));
+}
+
+/***/ }),
+
+/***/ "./src/components/Header/Header.js":
+/*!*****************************************!*\
+  !*** ./src/components/Header/Header.js ***!
+  \*****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Header)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Aside_Aside__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../Aside/Aside */ "./src/components/Aside/Aside.js");
+
+
+function Header() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("header", {
+    className: "header my-4"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "container-tertiary m-auto p-2"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Aside_Aside__WEBPACK_IMPORTED_MODULE_1__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", {
+    id: "title",
+    className: "h-main my-3 ta-c"
+  }, "freeCodeCamp Survey"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("i", {
+    className: "fa-regular fa-clipboard h-icon ta-c mb-3"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+    id: "description",
+    className: "p-main"
+  }, "Welcome to my survey form, the first project in", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    href: "https://www.freecodecamp.org/learn/2022/responsive-web-design/",
+    target: "_blank",
+    className: "p-main-link"
+  }, "freeCodeCamp's"), "Responsive Web Design curriculum. This survey contains various types of form elements, such as text inputs, radio buttons, checkboxes, and dropdown menus, as well as a submit button."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+    className: "p-main"
+  }, "The purpose of this project is to practice my HTML and CSS skills by creating a simple, user-friendly form that collects data from users.")));
 }
 
 /***/ }),
@@ -67,6 +240,266 @@ function Navbar() {
     className: "fa-brands fa-github ml-1",
     "aria-hidden": "true"
   }))))));
+}
+
+/***/ }),
+
+/***/ "./src/components/Section/Section.js":
+/*!*******************************************!*\
+  !*** ./src/components/Section/Section.js ***!
+  \*******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Section)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+function Section(props) {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
+    className: props.classList
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: props.containerClasses
+  }, props.content));
+}
+
+/***/ }),
+
+/***/ "./src/components/SurveyForm/SurveyForm.js":
+/*!*************************************************!*\
+  !*** ./src/components/SurveyForm/SurveyForm.js ***!
+  \*************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ SurveyForm)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Fieldset_Fieldset__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../Fieldset/Fieldset */ "./src/components/Fieldset/Fieldset.js");
+
+
+function SurveyForm() {
+  var userInfo = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
+    htmlFor: "name",
+    id: "name-label",
+    className: "form-label my-1"
+  }, "Name ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
+    className: "form-label-sm"
+  }, "*Required")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
+    type: "text",
+    name: "name",
+    id: "name",
+    className: "p-1 form-input",
+    placeholder: "Enter your name",
+    required: true
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
+    htmlFor: "email",
+    id: "email-label",
+    className: "form-label my-1"
+  }, "Email ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
+    className: "form-label-sm"
+  }, "*Required")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
+    type: "email",
+    name: "email",
+    id: "email",
+    className: "p-1 form-input",
+    placeholder: "Enter your Email",
+    required: true
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
+    htmlFor: "number",
+    id: "number-label",
+    className: "form-label my-1"
+  }, "Age ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null, "(optional)")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
+    type: "number",
+    name: "number",
+    id: "number",
+    className: "p-1 form-input",
+    min: 12,
+    max: 100,
+    placeholder: "Age"
+  }));
+  var userSurvey = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
+    htmlFor: "dropdown",
+    className: "form-label my-1"
+  }, "Which option best describes your current role?"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("select", {
+    name: "dropdown",
+    id: "dropdown",
+    className: "p-1 form-input"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("option", {
+    value: 0
+  }, "Select current role"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("option", {
+    value: 1
+  }, "Student"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("option", {
+    value: 2
+  }, "Full Time Job"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("option", {
+    value: 3
+  }, "Full Time Learner"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("option", {
+    value: 4
+  }, "Perfer not to say"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("option", {
+    value: 5
+  }, "Other")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
+    htmlFor: "recommendation",
+    className: "form-label my-1"
+  }, "Would you recommend freeCodeCamp to a friend?"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
+    htmlFor: "definitely",
+    className: "form-label my-1"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
+    type: "radio",
+    name: "recommendation",
+    id: "definitely",
+    defaultValue: "definitely"
+  }), "Definitely"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
+    htmlFor: "maybe",
+    className: "form-label my-1"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
+    type: "radio",
+    name: "recommendation",
+    id: "maybe",
+    defaultValue: "maybe"
+  }), "Maybe"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
+    htmlFor: "not-sure",
+    className: "form-label my-1"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
+    type: "radio",
+    name: "recommendation",
+    id: "not-sure",
+    defaultValue: "not-sure"
+  }), "Not Sure"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
+    htmlFor: "dropdown-2",
+    className: "form-label my-1"
+  }, "What is your favorite feature of freeCodeCamp?"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("select", {
+    name: "dropdown-2",
+    className: "p-1 form-input"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("option", {
+    value: 0
+  }, "Select an option"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("option", {
+    value: 1
+  }, "Challenges"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("option", {
+    value: 2
+  }, "Projects"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("option", {
+    value: 3
+  }, "Community"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("option", {
+    value: 4
+  }, "Open Source")));
+  var additionalComments = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
+    htmlFor: "improvements",
+    className: "form-label my-1"
+  }, "What would you like to see improved?", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
+    className: "form-label-sm"
+  }, "(Check all that apply)")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
+    htmlFor: "back-end",
+    className: "form-label my-1"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
+    type: "checkbox",
+    name: "improvements",
+    defaultValue: "back-end",
+    id: "back-end"
+  }), "Front-end Projects"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
+    htmlFor: "data-visualization",
+    className: "form-label my-1"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
+    type: "checkbox",
+    name: "improvements",
+    defaultValue: "data-visualization",
+    id: "data-visualization"
+  }), "Data Visualization"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
+    htmlFor: "challenges",
+    className: "form-label my-1"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
+    type: "checkbox",
+    name: "improvements",
+    defaultValue: "challenges",
+    id: "challenges"
+  }), "Challenges"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
+    htmlFor: "open-source",
+    className: "form-label my-1"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
+    type: "checkbox",
+    name: "improvements",
+    defaultValue: "open-source",
+    id: "open-source"
+  }), "Open Source Community"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
+    htmlFor: "gitter",
+    className: "form-label my-1"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
+    type: "checkbox",
+    name: "improvements",
+    defaultValue: "gitter",
+    id: "gitter"
+  }), "Gitter help rooms"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
+    htmlFor: "videos",
+    className: "form-label my-1"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
+    type: "checkbox",
+    name: "improvements",
+    defaultValue: "videos",
+    id: "videos"
+  }), "Videos"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
+    htmlFor: "city-meetups",
+    className: "form-label my-1"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
+    type: "checkbox",
+    name: "improvements",
+    defaultValue: "city-meetups",
+    id: "city-meetups"
+  }), "City Meetups"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
+    htmlFor: "wiki",
+    className: "form-label my-1"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
+    type: "checkbox",
+    name: "improvements",
+    defaultValue: "wiki",
+    id: "wiki"
+  }), "Wiki"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
+    htmlFor: "forum",
+    className: "form-label my-1"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
+    type: "checkbox",
+    name: "improvements",
+    defaultValue: "forum",
+    id: "forum"
+  }), "Forum"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
+    htmlFor: "additional-courses",
+    className: "form-label my-1"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
+    type: "checkbox",
+    name: "improvements",
+    defaultValue: "additional-courses",
+    id: "additional-courses"
+  }), "Additional Courses"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
+    htmlFor: "comments",
+    className: "form-label my-1"
+  }, "Any comments or suggestions?"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("textarea", {
+    name: "comments",
+    id: "comments",
+    className: "p-1 form-input",
+    rows: 5,
+    placeholder: "Enter your comment here...",
+    defaultValue: ""
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
+    id: "submit",
+    type: "submit",
+    defaultValue: "Submit",
+    className: "btn btn-form"
+  }));
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("form", {
+    action: "#",
+    id: "survey-form",
+    className: "form"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Fieldset_Fieldset__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    legend: "User Info",
+    fieldsetContent: userInfo
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Fieldset_Fieldset__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    legend: "User Survey",
+    fieldsetContent: userSurvey
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Fieldset_Fieldset__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    legend: "Additional Comments",
+    fieldsetContent: additionalComments
+  }));
 }
 
 /***/ }),
@@ -34063,4 +34496,4 @@ root.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createEle
 
 /******/ })()
 ;
-//# sourceMappingURL=bundle3883d393d8799d3256d7.js.map
+//# sourceMappingURL=bundle40a298e5c68d56cda426.js.map
