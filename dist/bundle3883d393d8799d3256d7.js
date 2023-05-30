@@ -2,6 +2,75 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/App.js":
+/*!********************!*\
+  !*** ./src/App.js ***!
+  \********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ App)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _components_Navbar_Navbar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/Navbar/Navbar */ "./src/components/Navbar/Navbar.js");
+
+
+function App() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Navbar_Navbar__WEBPACK_IMPORTED_MODULE_1__["default"], null);
+}
+
+/***/ }),
+
+/***/ "./src/components/Navbar/Navbar.js":
+/*!*****************************************!*\
+  !*** ./src/components/Navbar/Navbar.js ***!
+  \*****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Navbar)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _fcc_primary_large_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./fcc_primary_large.png */ "./src/components/Navbar/fcc_primary_large.png");
+
+
+function Navbar() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("nav", {
+    className: "nav py-0 bg-dark"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "container flex flex-ai--c flex-jc--sb m-auto flex-d--c pi-1"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    href: "index.html",
+    className: "logo"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+    src: _fcc_primary_large_png__WEBPACK_IMPORTED_MODULE_1__,
+    className: "nav-logo-img",
+    alt: "freeCodeCamp"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", {
+    className: "nav-links flex gap-2"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    href: "https://www.linkedin.com/in/daniel-nelson-9151a6212/",
+    target: "_blank",
+    className: "nav-link p-0"
+  }, "Daniel Nelson", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("i", {
+    className: "fa-brands fa-linkedin ml-1",
+    "aria-hidden": "true"
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    href: "https://github.com/youngmrnelson",
+    target: "_blank",
+    className: "nav-link p-0"
+  }, "View The Code", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("i", {
+    className: "fa-brands fa-github ml-1",
+    "aria-hidden": "true"
+  }))))));
+}
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/main.scss":
 /*!*********************************************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/main.scss ***!
@@ -33840,6 +33909,16 @@ function styleTagTransform(css, styleElement) {
 }
 module.exports = styleTagTransform;
 
+/***/ }),
+
+/***/ "./src/components/Navbar/fcc_primary_large.png":
+/*!*****************************************************!*\
+  !*** ./src/components/Navbar/fcc_primary_large.png ***!
+  \*****************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "fcc_primary_large.png";
+
 /***/ })
 
 /******/ 	});
@@ -33896,6 +33975,18 @@ module.exports = styleTagTransform;
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -33921,6 +34012,29 @@ module.exports = styleTagTransform;
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src;
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) {
+/******/ 					var i = scripts.length - 1;
+/******/ 					while (i > -1 && !scriptUrl) scriptUrl = scripts[i--].src;
+/******/ 				}
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/nonce */
 /******/ 	(() => {
 /******/ 		__webpack_require__.nc = undefined;
@@ -33937,17 +34051,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_dom_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom/client */ "./node_modules/react-dom/client.js");
-/* harmony import */ var _scss_main_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./scss/main.scss */ "./src/scss/main.scss");
+/* harmony import */ var _App__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./App */ "./src/App.js");
+/* harmony import */ var _scss_main_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./scss/main.scss */ "./src/scss/main.scss");
 
 
 
-function App() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, "Somebody tell my momma her middle son is a React developer!");
-}
+
 var root = (0,react_dom_client__WEBPACK_IMPORTED_MODULE_1__.createRoot)(document.getElementById('root'));
-root.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(App, null));
+root.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_App__WEBPACK_IMPORTED_MODULE_2__["default"], null));
 })();
 
 /******/ })()
 ;
-//# sourceMappingURL=bundle79add2dfe9c4fe92bb76.js.map
+//# sourceMappingURL=bundle3883d393d8799d3256d7.js.map
